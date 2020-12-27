@@ -100,6 +100,25 @@ $(document).ready(() => {
           display: true,
         },
         position: 'right',
+        ticks: {
+          beginAtZero: true,
+          max: 100,
+        }
+      }],
+      xAxes: [{
+        /* a suitable configuration for meteo time series*/
+        /*type: 'time', //TODO this type does crash the chart. Why?*/
+        distribution: 'series',
+        time: {
+          unit: 'minute',
+          displayFormats: {
+            minute: 'hh:mm'
+          }
+        },
+        ticks: {
+          maxRotation: 90,
+          minRotation: 90,
+        }
       }]
     }
   };
