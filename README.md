@@ -1,3 +1,4 @@
+Note: This repo contains personal changes for a simple weather station project. ALPHA-Stage!
 ---
 page_type: sample
 languages:
