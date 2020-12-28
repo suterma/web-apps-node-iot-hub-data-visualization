@@ -91,6 +91,10 @@ $(document).ready(() => {
           display: true,
         },
         position: 'left',
+        ticks: {
+          suggestedMin: 10,
+          suggestedMax: 30,
+        }
       },
       {
         id: 'Humidity',
@@ -102,7 +106,7 @@ $(document).ready(() => {
         position: 'right',
         ticks: {
           beginAtZero: true,
-          max: 100,
+          suggestedMax: 100,
         }
       }],
       xAxes: [{
